@@ -401,6 +401,8 @@ html{
     100%{width: 94%;}
  }
 
+
+
  /*Sección Curriculum*/
 
  .curriculum{
@@ -662,7 +664,7 @@ html{
 
 .contacto .col .info{
     position: absolute;
-    top: 40%;
+    top: 27%;
     background-color: #252A2E;
     padding: 20px;
     max-width: 350px;
@@ -685,6 +687,8 @@ html{
     margin-right: 20px;
 
 }
+
+/*Footer*/
 footer{
     background-color: #252A2E;
     color: #fff;
@@ -746,9 +750,18 @@ footer .arriba{
     nav.responsive ul li{
         border-bottom: 1px solid #fff;
         padding: 10px 0;
+        text-align: center;
     }
 }
 @media screen and (max-width:700px){
+    
+    .inicio{
+        background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
+        url(img/js.png);
+        background-size: cover;
+        height: 60vh;
+    }
+
     .sobremi .fila{
         display: block;
     }
@@ -791,5 +804,13 @@ footer .arriba{
     }
     .contacto .fila .col{
         width: 100%;
+    }
+
+    .contacto h2{
+        text-align: center;
+    }
+
+    .contacto .col .info{
+        top: 50%;
     }
 }
