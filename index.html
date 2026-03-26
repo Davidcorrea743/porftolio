@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
@@ -29,6 +29,11 @@
             <li>
               <a href="#curriculum" onclick="seleccionar()">CURRICULUM</a>
             </li>
+            <li>
+              <a href="#certificaciones" onclick="seleccionar()"
+                >CERTIFICACIONES</a
+              >
+            </li>
             <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
             <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
           </ul>
@@ -46,10 +51,16 @@
           <!-- <img src="img/profile.png" alt="" />-->
         </div>
         <h1>Jesús D. Correa</h1>
-        <h2>Desarrollador Frontend</h2>
+        <h2>Desarrollador Full Stack | Python, Django, React, NestJS</h2>
+        <p class="intro-hero">
+          Construyo productos web escalables, APIs robustas y automatizaciones
+          con foco en calidad, documentacion y trabajo en equipo.
+        </p>
         <div class="redes">
-          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
           <a href="https://www.linkedin.com/in/davidcorrea743/"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/davidcorrea743"
             ><i class="fa-brands fa-github"></i
           ></a>
           <!--<a href="#"><i class="fa-solid fa-rss"></i></a>-->
@@ -62,7 +73,12 @@
       <div class="contenido-seccion">
         <h2>Sobre Mi</h2>
         <p>
-          <span>Hola, Jesús D. Correa</span> Apasionado por crear experiencias web innovadoras que cautiven a los usuarios.</p>
+          <span>Hola, soy Jesús D. Correa.</span> Desarrollador Full Stack con
+          más de 7 años de experiencia en Python, Django, React y tecnologías
+          web. Especializado en automatización, consumo de APIs y análisis
+          técnico en entornos blockchain. Enfoque en soluciones modulares,
+          documentación clara y colaboración efectiva.
+        </p>
 
         <div class="fila">
           <!-- datos personales -->
@@ -71,15 +87,13 @@
             <ul>
               <li>
                 <strong>Email:</strong>
-                davidcorrea.743@gmail.com
-              </li>
-              <li>
+                davidcorrea.743@gmail.com <br />
                 <strong>Dirección:</strong>
                 Caracas, Venezuela
               </li>
               <li>
                 <strong>Cargo:</strong>
-                <span>Frontend Develop/ Fullstack básico</span>
+                <span>Full Stack Developer</span>
               </li>
             </ul>
           </div>
@@ -115,10 +129,10 @@
             </div>
           </div>
         </div>
-        <button>
+        <a class="btn-cv" href="img/CVJesusDavidCorrea2026.pdf" download>
           Descargar CV <i class="fa-solid fa-download"></i>
           <span class="overlay"></span>
-        </button>
+        </a>
       </div>
     </section>
 
@@ -134,7 +148,7 @@
               <span>JavaScript</span>
               <div class="barra-skill">
                 <div class="progreso">
-                  <span>75%</span>
+                  <span>80%</span>
                 </div>
               </div>
             </div>
@@ -147,26 +161,74 @@
               </div>
             </div>
             <div class="skill">
-              <span>Node</span>
-              <div class="barra-skill">
-                <div class="progreso">
-                  <span>50%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skill">
-              <span>Wordpress</span>
-              <div class="barra-skill">
-                <div class="progreso">
-                  <span>48%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skill">
               <span>React</span>
               <div class="barra-skill">
                 <div class="progreso">
-                  <span>55 %</span>
+                  <span>75%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Node.js</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>65%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>NestJS</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>60%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Python</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>75%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Django</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>70%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>APIs REST</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>70%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Bases de Datos (SQL/NoSQL)</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>70%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Git / Linux</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>70%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Web3 / Blockchain (basico)</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>45%</span>
                 </div>
               </div>
             </div>
@@ -241,38 +303,25 @@
                 <div class="circuloi"></div>
               </div>
             </div>
-            <h3>Cursos</h3>
-                    <div class="item izq">
-                        <h4>Hacking Ético a redes WiFi</h4>
-                        <span class="casa">Udemy</span>
-                        <p>Ataques de MITM, Auditorias en redes WiFi, Ataques de Phishing, Ataques DOS, entre otras</p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                    
-                    <div class="item izq">
-                        <h4>Universidad Desarrollo Web</h4>
-                        <span class="casa">Udemy</span>
-                        <p> Curso para aprender a crear aplicaciones Web Modernas con HTML, CSS y JavaScript.</p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-
-                    <div class="item izq">
-                      <h4>Escuela de JavaScript 2024</h4>
-                      <span class="casa">Udemy</span>
-                      <p>Desarrollo FullSatck con JavaScript, Webpack, NodeJS , Express, etc.</p>
-                      <div class="conectori">
-                          <div class="circuloi"></div>
-                      </div>
-                  </div>
-         
           </div>
 
           <div class="col derecha">
             <h3>Experiencia de trabajo</h3>
+            <div class="item der">
+              <h4>Freelance Full Stack</h4>
+              <span class="casa">Proyectos independientes</span>
+              <span class="fecha">2020 - Presente</span>
+              <p>
+                Desarrollo de soluciones con NestJS y React, integracion de
+                LLMs, QA funcional, gestion de proyectos y documentacion tecnica
+                para clientes y equipos. Logros medibles: ciclos de entrega mas
+                cortos en <strong>[X]%</strong> y reduccion de incidencias en
+                <strong>[Y]%</strong>.
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
             <div class="item der">
               <h4>Coordinador de Tecnología</h4>
               <span class="casa">Inversiones Palmania</span>
@@ -324,54 +373,207 @@
       </div>
     </section>
 
+    <!-- CERTIFICACIONES -->
+    <section id="certificaciones" class="certificaciones">
+      <div class="contenido-seccion">
+        <h2>Certificaciones y Cursos</h2>
+        <div class="cert-grid">
+          <!--  Devops  -->
+          <article class="cert-card">
+            <div class="cert-header">
+              <h3>Curso de Introducción a DevOps: Bases y Conceptos</h3>
+              <span class="cert-org">CódigoFacilito</span>
+            </div>
+            <p>
+              Introducción a los principios de automatización, despliegue
+              continuo y colaboración técnica para la gestión eficiente de
+              entornos de desarrollo y producción.
+            </p>
+            <div class="cert-meta">
+              <span>2026</span>
+              <a
+                href="#"
+                aria-label="Ver certificado Curso de Introducción a DevOps: Bases y Conceptos"
+                >Certificado</a
+              >
+            </div>
+          </article>
+
+          <!--  Arquitectura de Software  -->
+          <article class="cert-card">
+            <div class="cert-header">
+              <h3>Curso de Fundamentos de arquitectura de Software</h3>
+              <span class="cert-org">CódigoFacilito</span>
+            </div>
+            <p>
+              Fundamentos de arquitectura de software, incluyendo diseño,
+              patrones y mejores prácticas.
+            </p>
+            <div class="cert-meta">
+              <span>2026</span>
+              <a
+                href="#"
+                aria-label="Ver certificado Curso de Fundamentos de arquitectura de Software"
+                >Certificado</a
+              >
+            </div>
+          </article>
+
+          <!--  React  -->
+          <article class="cert-card">
+            <div class="cert-header">
+              <h3>Curso de React</h3>
+              <span class="cert-org">CodigoFacilito</span>
+            </div>
+            <p>Componentes, hooks, routing y buenas practicas.</p>
+            <div class="cert-meta">
+              <span>2025</span>
+              <a href="#" aria-label="Ver certificado Curso de React"
+                >Certificado</a
+              >
+            </div>
+          </article>
+
+          <!--  React Native  -->
+          <article class="cert-card">
+            <div class="cert-header">
+              <h3>Curso de React Native</h3>
+              <span class="cert-org">CodigoFacilito</span>
+            </div>
+            <p>
+              Bases y fundamentos para la creación de apps móviles
+              multiplataforma, cubriendo desde el diseño de componentes nativos
+              hasta la comunicación con servicios externos.
+            </p>
+            <div class="cert-meta">
+              <span>2025</span>
+              <a href="#" aria-label="Ver certificado Curso de React Native"
+                >Certificado</a
+              >
+            </div>
+          </article>
+
+          <!--  TypeScript  -->
+          <article class="cert-card">
+            <div class="cert-header">
+              <h3>Curso Profesional de TypeScript</h3>
+              <span class="cert-org">CodigoFacilito</span>
+            </div>
+            <p>
+              Especialización en el sistema de tipos de TypeScript para la
+              creación de arquitecturas de software seguras, mantenibles y
+              preparadas para entornos de producción exigentes.
+            </p>
+            <div class="cert-meta">
+              <span>2025</span>
+              <a
+                href="#"
+                aria-label="Ver certificado Curso Profesional de TypeScript"
+                >Certificado</a
+              >
+            </div>
+          </article>
+
+          <!--  Hacking Etico  -->
+          <article class="cert-card">
+            <div class="cert-header">
+              <h3>Hacking Etico a redes WiFi</h3>
+              <span class="cert-org">Udemy</span>
+            </div>
+            <p>Auditoria WiFi, MITM, phishing y defensa basica.</p>
+            <div class="cert-meta">
+              <span>2023</span>
+              <a
+                href="#"
+                aria-label="Ver certificado Hacking Etico a redes WiFi"
+                >Certificado</a
+              >
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <!-- SECCION PORTFOLIO -->
     <section id="portfolio" class="portfolio">
       <div class="contenido-seccion">
         <h2>PORTFOLIO</h2>
         <div class="galeria">
-          <div class="proyecto">
-            <img src="img/p5.jpg" alt="" />
-            <div class="overlay">
-              <h3>Diseño Creativo</h3>
-              <p>Fotografía</p>
+          <!-- Plantilla de cards para proyectos -->
+          <article class="card-proyecto">
+            <div
+              class="card-media"
+              role="img"
+              aria-label="Vista previa del proyecto"
+            ></div>
+            <div class="card-body">
+              <h3>StatusPulse - Monitor de APIs</h3>
+              <p>
+                Dashboard de salud y rendimiento de APIs con alertas, historico
+                de latencia y reportes automatizados.
+              </p>
+              <ul class="stack">
+                <li>React</li>
+                <li>NestJS</li>
+                <li>PostgreSQL</li>
+              </ul>
+              <div class="card-actions">
+                <a href="#" class="btn-outline" aria-label="Ver demo">Demo</a>
+                <a href="#" class="btn-primary" aria-label="Ver codigo"
+                  >Codigo</a
+                >
+              </div>
             </div>
-          </div>
-          <div class="proyecto">
-            <img src="img/p2.jpg" alt="" />
-            <div class="overlay">
-              <h3>Diseño Creativo</h3>
-              <p>Fotografía</p>
+          </article>
+
+          <article class="card-proyecto">
+            <div
+              class="card-media"
+              role="img"
+              aria-label="Vista previa del proyecto"
+            ></div>
+            <div class="card-body">
+              <h3>DocuFlow - Documentacion Viva</h3>
+              <p>
+                Gestor de documentacion tecnica con plantillas, control de
+                versiones y asistente LLM para resúmenes y FAQs.
+              </p>
+              <ul class="stack">
+                <li>React</li>
+                <li>Python</li>
+                <li>Django</li>
+              </ul>
+              <div class="card-actions">
+                <a href="#" class="btn-outline" aria-label="Ver demo">Demo</a>
+                <a href="#" class="btn-primary" aria-label="Ver codigo"
+                  >Codigo</a
+                >
+              </div>
             </div>
-          </div>
-          <div class="proyecto">
-            <img src="img/p3.jpg" alt="" />
-            <div class="overlay">
-              <h3>Diseño Creativo</h3>
-              <p>Fotografía</p>
+          </article>
+
+          <article class="card-proyecto plantilla">
+            <div
+              class="card-media"
+              role="img"
+              aria-label="Vista previa del proyecto"
+            ></div>
+            <div class="card-body">
+              <h3>Nuevo Proyecto</h3>
+              <p>Agrega aqui el resumen y resultados del proyecto.</p>
+              <ul class="stack">
+                <li>Stack</li>
+                <li>Stack</li>
+                <li>Stack</li>
+              </ul>
+              <div class="card-actions">
+                <a href="#" class="btn-outline" aria-label="Ver demo">Demo</a>
+                <a href="#" class="btn-primary" aria-label="Ver codigo"
+                  >Codigo</a
+                >
+              </div>
             </div>
-          </div>
-          <div class="proyecto">
-            <img src="img/p4.jpg" alt="" />
-            <div class="overlay">
-              <h3>Diseño Creativo</h3>
-              <p>Fotografía</p>
-            </div>
-          </div>
-          <div class="proyecto">
-            <img src="img/18.2.jpg" alt="" />
-            <div class="overlay">
-               <h3>TeraWatt Mining</h3>
-              <p>Energy</p>
-              <a href="https://terawattmining.com/energy.html"> Ir</a>
-            </div>
-          </div>
-          <div class="proyecto">
-            <img src="img/p1.jpg" alt="" />
-            <div class="overlay">
-              <h3>Ministerio del Poder Popular para la Educación</h3>
-              <p>SENIFA</p>
-            </div>
-          </div>
+          </article>
         </div>
       </div>
     </section>
@@ -425,7 +627,9 @@
         <i class="fa-solid fa-angles-up"></i>
       </a>
       <div class="redes">
-        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/davidcorrea743/"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
         <a href="https://github.com/Davidcorrea743"
           ><i class="fa-brands fa-github"></i
         ></a>
