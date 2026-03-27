@@ -699,6 +699,8 @@ html {
     rgba(155, 163, 172, 0.25),
     rgba(30, 35, 38, 0.95)
   );
+  background-size: cover;
+  background-position: center;
 }
 
 .card-body {
