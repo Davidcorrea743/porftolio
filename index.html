@@ -69,6 +69,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Logos de tecnologías: https://devicon.dev -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -197,143 +202,46 @@
     <section class="skills" id="skills">
       <div class="contenido-seccion">
         <h2>Skills</h2>
-        <div class="fila">
-          <!-- Technical Skills -->
-          <div class="col">
-            <h3>Technical Skills</h3>
-            <div class="skill">
-              <span>JavaScript</span>
-              <div class="barra-skill">
-                <div class="progreso">
-                  <span>80%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skill">
-              <span>HTML & CSS</span>
-              <div class="barra-skill">
-                <div class="progreso">
-                  <span>85%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skill">
-              <span>React</span>
-              <div class="barra-skill">
-                <div class="progreso">
-                  <span>75%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skill">
-              <span>Node.js</span>
-              <div class="barra-skill">
-                <div class="progreso">
-                  <span>65%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skill">
-              <span>NestJS</span>
-              <div class="barra-skill">
-                <div class="progreso">
-                  <span>60%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skill">
-              <span>Python</span>
-              <div class="barra-skill">
-                <div class="progreso">
-                  <span>75%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skill">
-              <span>Django</span>
-              <div class="barra-skill">
-                <div class="progreso">
-                  <span>70%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skill">
-              <span>APIs REST</span>
-              <div class="barra-skill">
-                <div class="progreso">
-                  <span>70%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skill">
-              <span>Bases de Datos (SQL/NoSQL)</span>
-              <div class="barra-skill">
-                <div class="progreso">
-                  <span>70%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skill">
-              <span>Git / Linux</span>
-              <div class="barra-skill">
-                <div class="progreso">
-                  <span>70%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skill">
-              <span>Web3 / Blockchain (básico)</span>
-              <div class="barra-skill">
-                <div class="progreso">
-                  <span>45%</span>
-                </div>
-              </div>
-            </div>
+        <div class="skills-grid">
+          <div class="skill-grupo">
+            <h3><i class="fa-solid fa-display" aria-hidden="true"></i> Frontend</h3>
+            <ul class="tech-list">
+              <li><i class="devicon-javascript-plain colored" aria-hidden="true"></i> JavaScript</li>
+              <li><i class="devicon-typescript-plain colored" aria-hidden="true"></i> TypeScript</li>
+              <li><i class="devicon-react-original colored" aria-hidden="true"></i> React</li>
+              <li><i class="devicon-react-original" aria-hidden="true"></i> React Native</li>
+              <li><i class="devicon-html5-plain colored" aria-hidden="true"></i> HTML5</li>
+              <li><i class="devicon-css3-plain colored" aria-hidden="true"></i> CSS3</li>
+            </ul>
           </div>
 
-          <!-- Professional Skill -->
-          <div class="col">
-            <h3>Professional Skills</h3>
-            <div class="skill">
-              <span>Comunicación</span>
-              <div class="barra-skill">
-                <div class="progreso">
-                  <span>80%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skill">
-              <span>Trabajo en Equipo</span>
-              <div class="barra-skill">
-                <div class="progreso">
-                  <span>70%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skill">
-              <span>Creatividad</span>
-              <div class="barra-skill">
-                <div class="progreso">
-                  <span>95%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skill">
-              <span>Dedicación</span>
-              <div class="barra-skill">
-                <div class="progreso">
-                  <span>88%</span>
-                </div>
-              </div>
-            </div>
-            <div class="skill">
-              <span>Project Management</span>
-              <div class="barra-skill">
-                <div class="progreso">
-                  <span>94%</span>
-                </div>
-              </div>
-            </div>
+          <div class="skill-grupo">
+            <h3><i class="fa-solid fa-server" aria-hidden="true"></i> Backend</h3>
+            <ul class="tech-list">
+              <li><i class="devicon-python-plain colored" aria-hidden="true"></i> Python</li>
+              <li><i class="devicon-django-plain" aria-hidden="true"></i> Django</li>
+              <li><i class="devicon-nodejs-plain colored" aria-hidden="true"></i> Node.js</li>
+              <li><i class="devicon-nestjs-original colored" aria-hidden="true"></i> NestJS</li>
+              <li><i class="fa-solid fa-plug" aria-hidden="true"></i> APIs REST</li>
+            </ul>
+          </div>
+
+          <div class="skill-grupo">
+            <h3><i class="fa-solid fa-database" aria-hidden="true"></i> Bases de datos</h3>
+            <ul class="tech-list">
+              <li><i class="devicon-postgresql-plain colored" aria-hidden="true"></i> PostgreSQL</li>
+              <li><i class="devicon-microsoftsqlserver-plain colored" aria-hidden="true"></i> SQL Server</li>
+            </ul>
+          </div>
+
+          <div class="skill-grupo">
+            <h3><i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i> DevOps y herramientas</h3>
+            <ul class="tech-list">
+              <li><i class="devicon-git-plain colored" aria-hidden="true"></i> Git</li>
+              <li><i class="devicon-linux-plain" aria-hidden="true"></i> Linux</li>
+              <li><i class="devicon-jira-plain colored" aria-hidden="true"></i> Jira</li>
+              <li><i class="devicon-wordpress-plain" aria-hidden="true"></i> WordPress</li>
+            </ul>
           </div>
         </div>
       </div>

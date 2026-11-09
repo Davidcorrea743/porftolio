@@ -256,278 +256,75 @@ html {
   padding: 20px 0;
 }
 
-.skills .fila {
-  display: flex;
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
 }
 
-.skills .fila .col {
-  width: 50%;
-  padding: 0 20px;
+.skill-grupo {
+  background-color: #1e2326;
+  border: 1px solid #2f353a;
+  border-radius: 16px;
+  padding: 24px;
 }
 
-.skills .fila .col h3 {
-  font-size: 28px;
+.skill-grupo h3 {
+  font-size: 24px;
   font-family: "Righteous";
-  margin-bottom: 25px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
-.skills .skill > span {
-  font-weight: bold;
-  display: block;
-  margin-bottom: 10px;
+.skill-grupo h3 i {
+  color: #9ba3ac;
+  font-size: 20px;
 }
 
-.skills .skill .barra-skill {
-  height: 8px;
-  width: 80%;
-  background-color: #131517;
-  position: relative;
-  margin-bottom: 30px;
+.tech-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
-.skills .skill .progreso {
-  background-color: #9ba3ac;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 8px;
+.tech-list li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  background-color: #252a2e;
+  border: 1px solid #2f353a;
+  border-radius: 999px;
+  font-size: 15px;
+  transition:
+    border-color 0.2s,
+    transform 0.2s;
 }
 
-.skills .skill .barra-skill span {
-  position: absolute;
-  height: 40px;
-  width: 40px;
-  background-color: #9ba3ac;
-  border-radius: 50px;
-  line-height: 40px;
-  text-align: center;
-  top: -17px;
-  right: -15px;
-  font-size: 14px;
+.tech-list li:hover {
+  border-color: #9ba3ac;
+  transform: translateY(-2px);
 }
 
-/* Clases que se agregaran dinamicamente mediante JS*/
-.skills .skill .javascript {
-  width: 0%;
-  animation: 2s javascript forwards;
+.tech-list li i {
+  font-size: 22px;
 }
 
-@keyframes javascript {
-  0% {
-    width: 0%;
+/* Los íconos sin color de marca (o con color muy oscuro) van en gris claro */
+.tech-list li i:not(.colored) {
+  color: #c7cbd1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tech-list li {
+    transition: none;
   }
-  100% {
-    width: 80%;
-  }
-}
-
-.skills .skill .htmlcss {
-  width: 0%;
-  animation: 2s htmlcss forwards;
-}
-
-@keyframes htmlcss {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 85%;
-  }
-}
-
-.skills .skill .node {
-  width: 0%;
-  animation: 2s node forwards;
-}
-
-@keyframes node {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 65%;
-  }
-}
-
-.skills .skill .react {
-  width: 0%;
-  animation: 2s react forwards;
-}
-
-@keyframes react {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 75%;
-  }
-}
-
-.skills .skill .nestjs {
-  width: 0%;
-  animation: 2s nestjs forwards;
-}
-
-@keyframes nestjs {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 60%;
-  }
-}
-
-.skills .skill .python {
-  width: 0%;
-  animation: 2s python forwards;
-}
-
-@keyframes python {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 75%;
-  }
-}
-
-.skills .skill .django {
-  width: 0%;
-  animation: 2s django forwards;
-}
-
-@keyframes django {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 70%;
-  }
-}
-
-.skills .skill .apis {
-  width: 0%;
-  animation: 2s apis forwards;
-}
-
-@keyframes apis {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 70%;
-  }
-}
-
-.skills .skill .databases {
-  width: 0%;
-  animation: 2s databases forwards;
-}
-
-@keyframes databases {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 70%;
-  }
-}
-
-.skills .skill .gitlinux {
-  width: 0%;
-  animation: 2s gitlinux forwards;
-}
-
-@keyframes gitlinux {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 70%;
-  }
-}
-
-.skills .skill .web3 {
-  width: 0%;
-  animation: 2s web3 forwards;
-}
-
-@keyframes web3 {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 45%;
-  }
-}
-
-.skills .skill .comunicacion {
-  width: 0%;
-  animation: 2s comunicacion forwards;
-}
-
-@keyframes comunicacion {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 80%;
-  }
-}
-
-.skills .skill .trabajo {
-  width: 0%;
-  animation: 2s trabajo forwards;
-}
-
-@keyframes trabajo {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 70%;
-  }
-}
-
-.skills .skill .creatividad {
-  width: 0%;
-  animation: 2s creatividad forwards;
-}
-
-@keyframes creatividad {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 95%;
-  }
-}
-
-.skills .skill .dedicacion {
-  width: 0%;
-  animation: 2s dedicacion forwards;
-}
-
-@keyframes dedicacion {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 88%;
-  }
-}
-
-.skills .skill .proyect {
-  width: 0%;
-  animation: 2s proyect forwards;
-}
-
-@keyframes proyect {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 94%;
+  .tech-list li:hover {
+    transform: none;
   }
 }
 
@@ -1047,14 +844,8 @@ footer .arriba {
     width: fit-content;
   }
 
-  .skills .fila {
-    display: block;
-  }
-  .skills .fila .col {
-    width: 100%;
-  }
-  .skills .fila .col .barra-skill {
-    width: 100%;
+  .skills-grid {
+    grid-template-columns: 1fr;
   }
 
   .curriculum .fila {
