@@ -319,6 +319,102 @@ html {
   color: #c7cbd1;
 }
 
+/* Íconos sin logo en las librerías: se usa un ícono genérico con color de marca */
+.tech-list li i.icono-zabbix {
+  color: #e45959;
+}
+.tech-list li i.icono-wazuh {
+  color: #3595f9;
+}
+.tech-list li i.icono-glpi {
+  color: #fec95c;
+}
+
+/* Logos de Simple Icons (https://simpleicons.org, CC0) pintados con su color */
+.si-icono {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background-color: var(--si-color);
+  -webkit-mask: var(--si-url) center / contain no-repeat;
+  mask: var(--si-url) center / contain no-repeat;
+}
+.si-kali {
+  --si-color: #a9cde6;
+  width: 26px;
+  height: 26px;
+  margin: -2px 0;
+  --si-url: url("https://cdn.jsdelivr.net/npm/simple-icons@13.21.0/icons/kalilinux.svg");
+}
+.si-wireshark {
+  --si-color: #3a9fd6;
+  --si-url: url("https://cdn.jsdelivr.net/npm/simple-icons@13.21.0/icons/wireshark.svg");
+}
+
+/* Tarjetas que ocupan todo el ancho de la cuadrícula */
+.skill-grupo--ancho {
+  grid-column: 1 / -1;
+}
+
+.sub-grupos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.sub-grupos h4 {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #9ba3ac;
+  margin-bottom: 12px;
+}
+
+/* Habilidades blandas con evidencia */
+.soft-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.soft-list li {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  padding: 16px;
+  background-color: #252a2e;
+  border: 1px solid #2f353a;
+  border-radius: 12px;
+}
+
+.soft-list li > i {
+  font-size: 20px;
+  color: #9ba3ac;
+  margin-top: 2px;
+  width: 24px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.soft-list strong {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.soft-list p {
+  font-size: 14px;
+  line-height: 21px;
+  color: #c7cbd1;
+}
+
+@media screen and (max-width: 980px) {
+  .soft-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .tech-list li {
     transition: none;
@@ -844,7 +940,9 @@ footer .arriba {
     width: fit-content;
   }
 
-  .skills-grid {
+  .skills-grid,
+  .sub-grupos,
+  .soft-list {
     grid-template-columns: 1fr;
   }
 
