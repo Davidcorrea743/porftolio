@@ -346,6 +346,20 @@ html {
   margin: -2px 0;
   --si-url: url("https://cdn.jsdelivr.net/npm/simple-icons@13.21.0/icons/kalilinux.svg");
 }
+.si-metasploit {
+  --si-color: #3aa6dc;
+  --si-url: url("https://cdn.jsdelivr.net/npm/simple-icons@13.21.0/icons/metasploit.svg");
+}
+.si-burp {
+  --si-color: #ff6633;
+  --si-url: url("https://cdn.jsdelivr.net/npm/simple-icons@13.21.0/icons/burpsuite.svg");
+}
+.tech-list li i.icono-wpscan {
+  color: #e0434b;
+}
+.tech-list li i.icono-ffuf {
+  color: #f5c542;
+}
 .si-wireshark {
   --si-color: #3a9fd6;
   --si-url: url("https://cdn.jsdelivr.net/npm/simple-icons@13.21.0/icons/wireshark.svg");
