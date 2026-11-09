@@ -370,10 +370,16 @@ html {
   grid-column: 1 / -1;
 }
 
+/* Seguridad tiene más del doble de herramientas: se le da 2/3 del ancho */
 .sub-grupos {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 2fr;
   gap: 24px;
+}
+
+.sub-grupos > div + div {
+  border-left: 1px solid #2f353a;
+  padding-left: 24px;
 }
 
 .sub-grupos h4 {
@@ -958,6 +964,12 @@ footer .arriba {
   .sub-grupos,
   .soft-list {
     grid-template-columns: 1fr;
+  }
+  .sub-grupos > div + div {
+    border-left: none;
+    padding-left: 0;
+    border-top: 1px solid #2f353a;
+    padding-top: 20px;
   }
 
   .curriculum .fila {
